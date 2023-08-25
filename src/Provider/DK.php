@@ -24,6 +24,7 @@ class DK extends AbstractEaster
 
         $holidays = array(
             '01-01' => $this->createData('Nytår'),
+            '06-05' => $this->createData('Grundlovsdag'),
             '12-25' => $this->createData('1. Juledag'),
             '12-26' => $this->createData('2. Juledag'),
 
