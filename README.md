@@ -1,6 +1,6 @@
-# checkdomain Holiday [![Build Status](https://travis-ci.org/checkdomain/Holiday.png?branch=master)](https://travis-ci.org/checkdomain/Holiday)
+# proximacode-dev Holiday
 
-Checkdomain/Holiday is a small library to check if a specified date is a holiday in a specific country. It also tells you if the given date is a nation wide holiday or just a holiday in some states.
+proximacode-dev/Holiday is a fork from checkdomain/Holiday library to check if a specified date is a holiday in a specific country. It also tells you if the given date is a nation wide holiday or just a holiday in some states.
 
 
 ## Currently supported countries
@@ -33,7 +33,7 @@ To create a new Provider please see the `ProviderInterface` interface.
 
 ## Requirements
 
-Checkdomain/Holiday requires php >= 5.5.
+Proximacode-dev/Holiday requires php >= 5.5.
 
 
 ## Installation
@@ -43,7 +43,7 @@ The easiest way to install this library is through [composer](http://getcomposer
 ```json
 {
    "require": {
-        "checkdomain/holiday": "~3.0.0"
+        "proximacode-dev/holiday": "~3.0.0"
     }
 }
 ```
