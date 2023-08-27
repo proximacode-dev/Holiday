@@ -4,7 +4,6 @@ namespace ProximaCode\Holiday\Test;
 
 class UtilTest extends \PHPUnit\Framework\TestCase
 {
-
     /**
      * @var \ProximaCode\Holiday\Util
      */

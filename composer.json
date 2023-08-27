@@ -1,6 +1,6 @@
 {
-    "name":         "composer-dev/holiday",
-    "description":  "composer-dev/Holiday provides a simple class to get holidays for a specified country. This is a fork of checkdomain/Holiday",
+    "name":         "proximacode-dev/holiday",
+    "description":  "proximacode-dev/Holiday provides a simple class to get holidays for a specified country. This is a fork of checkdomain/Holiday",
     "keywords":     ["holiday"],
     "type":         "library",
     "license":      "MIT",
