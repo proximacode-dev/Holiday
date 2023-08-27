@@ -1,10 +1,15 @@
 {
-    "name":         "checkdomain/holiday",
-    "description":  "Checkdomain/Holiday provides a simple class to get holidays for a specified country",
+    "name":         "composer-dev/holiday",
+    "description":  "composer-dev/Holiday provides a simple class to get holidays for a specified country. This is a fork of checkdomain/Holiday",
     "keywords":     ["holiday"],
     "type":         "library",
     "license":      "MIT",
     "authors": [
+        {
+            "name":     "Stein-Magne Pedersen",
+            "email":    "steinmagne@proximacode.no",
+            "homepage": "https://proximacode.com"
+        },
         {
             "name":     "Benjamin Paap",
             "email":    "b.paap@checkdomain.de",
@@ -16,12 +21,12 @@
         "ext-calendar": "*"
     },
     "require-dev": {
-        "phpunit/phpunit": "^5.7 || ^6.0 || ^7.0"
+        "phpunit/phpunit": "^7.0 || ^8.0|| ^9.0 || ^10.0"
     },
     "autoload": {
-        "psr-4": { "Checkdomain\\Holiday\\": "src/" }
+        "psr-4": { "ProximaCode\\Holiday\\": "src/" }
     },
     "autoload-dev": {
-        "psr-4": { "Checkdomain\\Holiday\\": "test/" }
+        "psr-4": { "ProximaCode\\Holiday\\": "test/" }
     }
 }

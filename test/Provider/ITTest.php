@@ -1,11 +1,13 @@
 <?php
+
 /**
  * Italian holiday provider
- * 
+ *
  * @author Giorgio Cefaro <giorgio.cefaro@gmail.com>
  * @since 2015-03-11
  */
-namespace Checkdomain\Holiday\Provider;
+
+namespace ProximaCode\Holiday\Provider;
 
 /**
  * Class ITTest
@@ -28,7 +30,7 @@ class ITTest extends AbstractTest
     public function dateProvider()
     {
         return array(
-			array('2010-01-01', null, array('name' => 'Capodanno')),
+            array('2010-01-01', null, array('name' => 'Capodanno')),
 
             array('2014-04-24', null, null),
             array('2014-04-25', null, array('name' => 'Liberazione dal nazifascismo (1945)')),

@@ -1,6 +1,6 @@
 <?php
 
-namespace Checkdomain\Holiday\Provider;
+namespace ProximaCode\Holiday\Provider;
 
 /**
  * Class Easter
@@ -93,5 +93,4 @@ abstract class AbstractEaster extends AbstractProvider
             'corpusChristi' => $corpusChristi
         );
     }
-
 }

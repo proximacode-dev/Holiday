@@ -1,6 +1,6 @@
 <?php
 
-namespace Checkdomain\Holiday\Provider;
+namespace ProximaCode\Holiday\Provider;
 
 use DateTime;
 
@@ -13,33 +13,33 @@ use DateTime;
  */
 class BR extends AbstractEaster
 {
-    const STATE_AC = 'Acre';
-    const STATE_AL = 'Alagoas';
-    const STATE_AP = 'Amapá';
-    const STATE_AM = 'Amazonas';
-    const STATE_BA = 'Bahia';
-    const STATE_CE = 'Ceará';
-    const STATE_DF = 'Distrito Federal';
-    const STATE_ES = 'Espírito Santo';
-    const STATE_GO = 'Goiás';
-    const STATE_MA = 'Maranhão';
-    const STATE_MT = 'Mato Grosso';
-    const STATE_MS = 'Mato Grosso do Sul';
-    const STATE_MG = 'Minas Gerais';
-    const STATE_PA = 'Pará';
-    const STATE_PB = 'Paraíba';
-    const STATE_PR = 'Paraná';
-    const STATE_PE = 'Pernambuco';
-    const STATE_PI = 'Piauí';
-    const STATE_RJ = 'Rio de Janeiro';
-    const STATE_RN = 'Rio Grande do Norte';
-    const STATE_RS = 'Rio Grande do Sul';
-    const STATE_RO = 'Rondônia';
-    const STATE_RR = 'Roraima';
-    const STATE_SC = 'Santa Catarina';
-    const STATE_SP = 'São Paulo';
-    const STATE_SE = 'Sergipe';
-    const STATE_TO = 'Tocantins';
+    public const STATE_AC = 'Acre';
+    public const STATE_AL = 'Alagoas';
+    public const STATE_AP = 'Amapá';
+    public const STATE_AM = 'Amazonas';
+    public const STATE_BA = 'Bahia';
+    public const STATE_CE = 'Ceará';
+    public const STATE_DF = 'Distrito Federal';
+    public const STATE_ES = 'Espírito Santo';
+    public const STATE_GO = 'Goiás';
+    public const STATE_MA = 'Maranhão';
+    public const STATE_MT = 'Mato Grosso';
+    public const STATE_MS = 'Mato Grosso do Sul';
+    public const STATE_MG = 'Minas Gerais';
+    public const STATE_PA = 'Pará';
+    public const STATE_PB = 'Paraíba';
+    public const STATE_PR = 'Paraná';
+    public const STATE_PE = 'Pernambuco';
+    public const STATE_PI = 'Piauí';
+    public const STATE_RJ = 'Rio de Janeiro';
+    public const STATE_RN = 'Rio Grande do Norte';
+    public const STATE_RS = 'Rio Grande do Sul';
+    public const STATE_RO = 'Rondônia';
+    public const STATE_RR = 'Roraima';
+    public const STATE_SC = 'Santa Catarina';
+    public const STATE_SP = 'São Paulo';
+    public const STATE_SE = 'Sergipe';
+    public const STATE_TO = 'Tocantins';
 
     /**
      * {@inheritdoc}
@@ -188,7 +188,7 @@ class BR extends AbstractEaster
     private function setHolidayForState(&$holidays, $day, $state, $name)
     {
         // Exists?
-        if (! array_key_exists($day, $holidays)) {
+        if (!array_key_exists($day, $holidays)) {
             // Initialized as State Holiday
             $holidays[$day] = $this->createData($name, []);
         }

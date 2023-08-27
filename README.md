@@ -56,7 +56,7 @@ Another way would be to download this library and configure the autoloading your
 To check for holidays just instantiate the Util class and call the `getHoliday` method.
 
 ```php
-$util    = new \Checkdomain\Holiday\Util();
+$util    = new \ProximaCode\Holiday\Util();
 $holiday = $util->getHoliday('DE', '2014-01-01');
 ```
 

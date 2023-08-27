@@ -14,7 +14,7 @@
     bootstrap                   = "./vendor/autoload.php" >
 
     <testsuites>
-        <testsuite name="Checkdomain Holidays Test Suite">
+        <testsuite name="Proxima Code Holidays Test Suite">
             <directory>./test</directory>
         </testsuite>
     </testsuites>

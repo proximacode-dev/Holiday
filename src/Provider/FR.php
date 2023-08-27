@@ -1,6 +1,6 @@
 <?php
 
-namespace Checkdomain\Holiday\Provider;
+namespace ProximaCode\Holiday\Provider;
 
 /**
  * French holiday provider
@@ -10,7 +10,7 @@ namespace Checkdomain\Holiday\Provider;
  */
 class FR extends AbstractEaster
 {
-    const STATE_AM = 'Alsace-Moselle';
+    public const STATE_AM = 'Alsace-Moselle';
 
     /**
      * @param int $year

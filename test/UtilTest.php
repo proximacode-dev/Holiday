@@ -1,12 +1,12 @@
 <?php
 
-namespace Checkdomain\Holiday\Test;
+namespace ProximaCode\Holiday\Test;
 
 class UtilTest extends \PHPUnit\Framework\TestCase
 {
 
     /**
-     * @var \Checkdomain\Holiday\Util
+     * @var \ProximaCode\Holiday\Util
      */
     protected $service;
 
@@ -15,7 +15,7 @@ class UtilTest extends \PHPUnit\Framework\TestCase
      */
     public function setUp()
     {
-        $this->service = new \Checkdomain\Holiday\Util();
+        $this->service = new \ProximaCode\Holiday\Util();
     }
 
     /**
@@ -49,7 +49,7 @@ class UtilTest extends \PHPUnit\Framework\TestCase
             $this->assertNotNull($holiday);
 
             foreach ($expectation[1] as $property => $expected) {
-                $method = 'get'.ucfirst($property);
+                $method = 'get' . ucfirst($property);
                 $actual = $holiday->$method();
 
                 $this->assertEquals($expected, $actual);
@@ -75,5 +75,4 @@ class UtilTest extends \PHPUnit\Framework\TestCase
             )))
         );
     }
-
 }

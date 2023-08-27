@@ -1,13 +1,12 @@
 <?php
 
-namespace Checkdomain\Holiday\Model;
+namespace ProximaCode\Holiday\Model;
 
 /**
  * Class Holiday
  */
 class Holiday
 {
-
     /**
      * @var string
      */
@@ -96,5 +95,4 @@ class Holiday
     {
         return $this->states;
     }
-
 }

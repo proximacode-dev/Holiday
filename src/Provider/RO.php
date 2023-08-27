@@ -1,6 +1,6 @@
 <?php
 
-namespace Checkdomain\Holiday\Provider;
+namespace ProximaCode\Holiday\Provider;
 
 /**
  * Romanian non-working holidays provider
@@ -51,5 +51,4 @@ class RO extends AbstractEaster
 
         return $holidays;
     }
-
 }

@@ -1,14 +1,16 @@
 <?php
+
 /**
  * Polish holiday provider
  *
  * @author Przemek Sztuczyński <psztuczynski@gmail.com>
  */
-namespace Checkdomain\Holiday\Provider;
+
+namespace ProximaCode\Holiday\Provider;
 
 /**
  * Class ITTest
- * @package Checkdomain\Holiday\Provider
+ * @package ProximaCode\Holiday\Provider
  */
 class PLTest extends AbstractTest
 {

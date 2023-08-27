@@ -1,6 +1,6 @@
 <?php
 
-namespace Checkdomain\Holiday\Provider;
+namespace ProximaCode\Holiday\Provider;
 
 /**
  * Latvian non-working holidays provider
@@ -22,7 +22,7 @@ class LV extends AbstractEaster
     {
         $easter = $this->getEasterDates($year);
 
-        $mothersDay = date('m-d', strtotime('second Sunday of May '. $year));
+        $mothersDay = date('m-d', strtotime('second Sunday of May ' . $year));
 
         $holidays = array(
             '01-01' => $this->createData('Jaunais Gads'),
@@ -45,5 +45,4 @@ class LV extends AbstractEaster
 
         return $holidays;
     }
-
 }

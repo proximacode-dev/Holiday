@@ -1,6 +1,6 @@
 <?php
 
-namespace Checkdomain\Holiday\Provider;
+namespace ProximaCode\Holiday\Provider;
 
 /**
  * Class DKTest
@@ -32,6 +32,7 @@ class DKTest extends AbstractTest
             array('2016-05-05', null, array('name' => 'Kristi Himmelfartsdag')),
             array('2016-05-15', null, array('name' => 'Pinsedag')),
             array('2016-05-16', null, array('name' => '2. Pinsedag')),
+            array('2016-06-05', null, array('name' => 'Grundlovsdag')),
             array('2016-12-25', null, array('name' => '1. Juledag')),
             array('2016-12-26', null, array('name' => '2. Juledag')),
         );

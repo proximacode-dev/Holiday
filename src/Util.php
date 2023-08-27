@@ -1,14 +1,14 @@
 <?php
 
-namespace Checkdomain\Holiday;
-use Checkdomain\Holiday\Model\Holiday;
+namespace ProximaCode\Holiday;
+
+use ProximaCode\Holiday\Model\Holiday;
 
 /**
  * Class Util
  */
 class Util
 {
-
     /**
      * Instantiates a provider for a given iso code
      *
@@ -20,10 +20,10 @@ class Util
     {
         $instance = null;
 
-        $class = '\\Checkdomain\\Holiday\\Provider\\' . $iso;
+        $class = '\\ProximaCode\\Holiday\\Provider\\' . $iso;
 
         if (class_exists($class)) {
-            $instance = new $class;
+            $instance = new $class();
         }
 
         return $instance;
@@ -89,5 +89,4 @@ class Util
 
         return $holiday;
     }
-
 }

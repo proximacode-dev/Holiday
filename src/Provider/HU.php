@@ -1,6 +1,6 @@
 <?php
 
-namespace Checkdomain\Holiday\Provider;
+namespace ProximaCode\Holiday\Provider;
 
 /**
  * Hungarian non-working holidays provider
@@ -25,14 +25,14 @@ class HU extends AbstractEaster
         $easter = $this->getEasterDates($year);
 
         $holidays = array(
-           '01-01' => $this->createData('Újév'),
-           '03-15' => $this->createData('Nemzeti ünnep'),
-           '05-01' => $this->createData('A munka ünnepe'),
-           '08-20' => $this->createData('Az államalapítás ünnepe'),
-           '10-23' => $this->createData('Nemzeti ünnep'),
-           '11-01' => $this->createData('Mindenszentek'),
-           '12-25' => $this->createData('Karácsony'),
-           '12-26' => $this->createData('Karácsony'),
+            '01-01' => $this->createData('Újév'),
+            '03-15' => $this->createData('Nemzeti ünnep'),
+            '05-01' => $this->createData('A munka ünnepe'),
+            '08-20' => $this->createData('Az államalapítás ünnepe'),
+            '10-23' => $this->createData('Nemzeti ünnep'),
+            '11-01' => $this->createData('Mindenszentek'),
+            '12-25' => $this->createData('Karácsony'),
+            '12-26' => $this->createData('Karácsony'),
 
             // Easter dates
             $easter['easterSunday']->format(self::DATE_FORMAT) => $this->createData('Húsvétvasárnap'),
@@ -49,5 +49,4 @@ class HU extends AbstractEaster
 
         return $holidays;
     }
-
 }

@@ -1,10 +1,12 @@
 <?php
+
 /**
  * Portuguese holiday provider
  *
  * @author Tiago Carvalho <tiago.carvalho@beubi.com>
  */
-namespace Checkdomain\Holiday\Provider;
+
+namespace ProximaCode\Holiday\Provider;
 
 /**
  * Class PTTest

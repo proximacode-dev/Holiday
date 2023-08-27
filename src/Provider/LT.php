@@ -1,6 +1,6 @@
 <?php
 
-namespace Checkdomain\Holiday\Provider;
+namespace ProximaCode\Holiday\Provider;
 
 /**
  * Lithuanian non-working holidays provider
@@ -22,8 +22,8 @@ class LT extends AbstractEaster
     {
         $easter = $this->getEasterDates($year);
 
-        $mothersDay = date('m-d', strtotime('first Sunday of May '. $year));
-        $fathersDay = date('m-d', strtotime('first Sunday of June '. $year));
+        $mothersDay = date('m-d', strtotime('first Sunday of May ' . $year));
+        $fathersDay = date('m-d', strtotime('first Sunday of June ' . $year));
 
         $holidays = array(
             '01-01' => $this->createData('Naujieji metai'),
@@ -48,5 +48,4 @@ class LT extends AbstractEaster
 
         return $holidays;
     }
-
 }

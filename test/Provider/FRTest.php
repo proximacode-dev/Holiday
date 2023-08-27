@@ -1,6 +1,6 @@
 <?php
 
-namespace Checkdomain\Holiday\Provider;
+namespace ProximaCode\Holiday\Provider;
 
 /**
  * Class FRTest
@@ -39,4 +39,4 @@ class FRTest extends AbstractTest
             array('2014-04-18', FR::STATE_AM, array('name' => 'Vendredi Saint')),
         );
     }
-} 
+}

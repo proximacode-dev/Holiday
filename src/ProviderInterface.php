@@ -1,13 +1,12 @@
 <?php
 
-namespace Checkdomain\Holiday;
+namespace ProximaCode\Holiday;
 
 /**
  * Interface ProviderInterface
  */
 interface ProviderInterface
 {
-
     /**
      * @param \DateTime $date
      * @param string    $state
@@ -22,5 +21,4 @@ interface ProviderInterface
      * @return mixed
      */
     public function getHolidaysByYear($year);
-
 }

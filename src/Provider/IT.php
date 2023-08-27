@@ -1,6 +1,6 @@
 <?php
 
-namespace Checkdomain\Holiday\Provider;
+namespace ProximaCode\Holiday\Provider;
 
 /**
  * Italian holiday provider
@@ -10,7 +10,6 @@ namespace Checkdomain\Holiday\Provider;
  */
 class IT extends AbstractEaster
 {
-
     /**
      * @param int $year
      *

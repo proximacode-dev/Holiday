@@ -1,6 +1,6 @@
 <?php
 
-namespace Checkdomain\Holiday\Provider;
+namespace ProximaCode\Holiday\Provider;
 
 /**
  * German holiday provider
@@ -10,23 +10,22 @@ namespace Checkdomain\Holiday\Provider;
  */
 class DE extends AbstractEaster
 {
-
-    const STATE_BW = 'Baden-Württemberg';
-    const STATE_BY = 'Bayern';
-    const STATE_BE = 'Berlin';
-    const STATE_BB = 'Brandenburg';
-    const STATE_HB = 'Freie Hansestadt Bremen';
-    const STATE_HH = 'Hamburg';
-    const STATE_HE = 'Hessen';
-    const STATE_MV = 'Mecklenburg-Vorpommern';
-    const STATE_NI = 'Niedersachsen';
-    const STATE_NW = 'Nordrhein-Westfalen';
-    const STATE_RP = 'Reinland-Pfalz';
-    const STATE_SL = 'Saarland';
-    const STATE_SN = 'Sachsen';
-    const STATE_ST = 'Sachsen-Anhalt';
-    const STATE_SH = 'Schleswig-Holstein';
-    const STATE_TH = 'Thüringen';
+    public const STATE_BW = 'Baden-Württemberg';
+    public const STATE_BY = 'Bayern';
+    public const STATE_BE = 'Berlin';
+    public const STATE_BB = 'Brandenburg';
+    public const STATE_HB = 'Freie Hansestadt Bremen';
+    public const STATE_HH = 'Hamburg';
+    public const STATE_HE = 'Hessen';
+    public const STATE_MV = 'Mecklenburg-Vorpommern';
+    public const STATE_NI = 'Niedersachsen';
+    public const STATE_NW = 'Nordrhein-Westfalen';
+    public const STATE_RP = 'Reinland-Pfalz';
+    public const STATE_SL = 'Saarland';
+    public const STATE_SN = 'Sachsen';
+    public const STATE_ST = 'Sachsen-Anhalt';
+    public const STATE_SH = 'Schleswig-Holstein';
+    public const STATE_TH = 'Thüringen';
 
     /**
      * @param int $year
@@ -132,10 +131,9 @@ class DE extends AbstractEaster
      */
     public function getDayOfRepentance($year)
     {
-        $date = new \DateTime($year.'-11-23');
+        $date = new \DateTime($year . '-11-23');
         $date->modify('previous wednesday');
 
         return $date;
     }
-
 }

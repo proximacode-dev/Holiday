@@ -1,6 +1,6 @@
 <?php
 
-namespace Checkdomain\Holiday\Provider;
+namespace ProximaCode\Holiday\Provider;
 
 /**
  * Swedish holiday provider
@@ -10,7 +10,6 @@ namespace Checkdomain\Holiday\Provider;
  **/
 class SE extends AbstractEaster
 {
-
     /**
      * @param int $year
      *
@@ -60,7 +59,7 @@ class SE extends AbstractEaster
      */
     public function getMidSummerDay($year)
     {
-        $date = new \DateTime($year.'-06-20');
+        $date = new \DateTime($year . '-06-20');
         for ($i = 0; $i < 7; $i++) {
             if ($date->format('w') == 6) {
                 break;
@@ -78,7 +77,7 @@ class SE extends AbstractEaster
      */
     public function getAllSaintsDay($year)
     {
-        $date = new \DateTime($year.'-10-31');
+        $date = new \DateTime($year . '-10-31');
         for ($i = 0; $i < 7; $i++) {
             if ($date->format('w') == 6) {
                 break;

@@ -1,6 +1,6 @@
 <?php
 
-namespace Checkdomain\Holiday\Provider;
+namespace ProximaCode\Holiday\Provider;
 
 /**
  * Estonian non-working holidays provider
@@ -43,5 +43,4 @@ class EE extends AbstractEaster
 
         return $holidays;
     }
-
 }

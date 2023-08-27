@@ -1,10 +1,10 @@
 <?php
 
-namespace Checkdomain\Holiday\Provider;
+namespace ProximaCode\Holiday\Provider;
 
 /**
  * Austrian holiday provider.
- * 
+ *
  * Data taken from http://www.feiertage-oesterreich.at/2015/
  *
  * @author Robert Scherer <rs@scherer-software.de>
@@ -13,15 +13,15 @@ namespace Checkdomain\Holiday\Provider;
 class AT extends AbstractEaster
 {
 
-	const STATE_B = 'Burgenland';
-	const STATE_K = 'Kärnten';
-	const STATE_NO = 'Niederösterreich';
-	const STATE_OO = 'Oberösterreich';
-	const STATE_S = 'Salzburg';
-	const STATE_ST = 'Steiermark';
-	const STATE_T = 'Tirol';
-	const STATE_V = 'Vorarlberg';
-	const STATE_W = 'Wien';
+    public const STATE_B = 'Burgenland';
+    public const STATE_K = 'Kärnten';
+    public const STATE_NO = 'Niederösterreich';
+    public const STATE_OO = 'Oberösterreich';
+    public const STATE_S = 'Salzburg';
+    public const STATE_ST = 'Steiermark';
+    public const STATE_T = 'Tirol';
+    public const STATE_V = 'Vorarlberg';
+    public const STATE_W = 'Wien';
 
     /**
      * @param int $year
@@ -54,5 +54,4 @@ class AT extends AbstractEaster
 
         return $holidays;
     }
-
 }

@@ -1,17 +1,16 @@
 <?php
 
-namespace Checkdomain\Holiday\Provider;
+namespace ProximaCode\Holiday\Provider;
 
-use Checkdomain\Holiday\Model\Holiday;
-use Checkdomain\Holiday\ProviderInterface;
+use ProximaCode\Holiday\Model\Holiday;
+use ProximaCode\Holiday\ProviderInterface;
 
 /**
  * Class AbstractProvider
  */
 abstract class AbstractProvider implements ProviderInterface
 {
-
-    const DATE_FORMAT = 'm-d';
+    public const DATE_FORMAT = 'm-d';
 
     /**
      * @param \DateTime $date
@@ -92,5 +91,4 @@ abstract class AbstractProvider implements ProviderInterface
             'states'   => $states
         );
     }
-
 }
